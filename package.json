@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-comments",
+  "version": "0.0.1",
+  "description": "reading user comments",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlwaysHungrie/nodejsComments.git"
+  },
+  "keywords": [
+    "nodejs",
+    "comments",
+    "user-profile"
+  ],
+  "author": "dhairyaShah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlwaysHungrie/nodejsComments/issues"
+  },
+  "homepage": "https://github.com/AlwaysHungrie/nodejsComments#readme"
+}
