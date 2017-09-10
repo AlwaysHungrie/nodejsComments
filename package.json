@@ -9,7 +9,7 @@
   "engines": {
     "node": ">=4.3 <7.0",
     "npm": ">=1.0.0"
-  }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlwaysHungrie/nodejsComments.git"
