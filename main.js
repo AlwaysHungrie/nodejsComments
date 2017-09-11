@@ -5,11 +5,12 @@ var app = express();
 app.set('view engine','jade');
 app.use(express.static(__dirname+'/public'));
 
+app.set('port', (process.env.PORT || 5000));
 
 app.get('/?',function(req,res){
 	res.render('index',{layout: false});
 });
 
-app.listen(3030,function(){
-	console.log('listening on 3030');
+app.listen(app.get('port'),function(){
+	console.log('listening on ' + app.get('port'));
 })
