@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Democritics</title>
+	<link rel="stylesheet" href="/css/bootstrap.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/mystyle.css"/>
+  <link rel="stylesheet" href="/css/mystyle1.css"/>
+  <link rel="stylesheet" href="/css/mystyle2.css"/>
+
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      
+
+  <style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+
+  <!-- Navbarclass="nav nav-pills pull-right" -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right ,nav nav-pills pull-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#ABOUT" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#TRENDING" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TRENDING</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT US</a>
+    <a href="#more" class="w3-bar-item w3-button w3-padding-large w3-hide-small"> KNOW MORE</a>
+    {{#if user}}
+              <a href="/users/logout" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">LOG OUT</a>
+            {{else}}
+              <a href="/users/login" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">LOG IN</a>
+              <a href="/users/register" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">REGISTER</a>
+            {{/if}}
+   
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">English</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">Hindi</a>
+   <!-- <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="MORE">KNOW MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Political parties around you</a>
+        <a href="#" class="w3-bar-item w3-button">Elections</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>-->
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#ABOUT" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+  <a href="#TRENDING" class="w3-bar-item w3-button w3-padding-large">TRENDING</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT US</a>
+  <a href="#more" class="w3-bar-item w3-button w3-padding-large">KNOW MORE</a>
+</div>
+
+
+
+
+
+	<div class="container">
+      <div>
+        <div >
+          
+          {{#if success_msg}}
+            <div class="alert alert-success">{{success_msg}}</div>
+          {{/if}}
+
+          {{#if error_msg}}
+            <div class="alert alert-danger">{{error_msg}}</div>
+          {{/if}}
+
+          {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+          {{/if}}
+          
+          
+        </div>
+
+        
+      </div>
+
+    </div> <!-- /container class="col-lg-12" class="row-lg-3"-->
+
+    {{{body}}}
+</body>
+</html>
